@@ -28,7 +28,7 @@ function miniCalc($one, $two, $operator) {
             break;
         }
     }
-    return is_float($result) ? number_format($result, 2) : $result;
+    return is_float($result) ? number_format($result, 2, ".", "") : $result;
 }
 echo miniCalc("5", "9", "-");
 ?>
